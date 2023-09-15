@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>começando no java</title>
+    <style>
+        body{
+            background-color: cadetblue;
+        }
+        h1{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Java script</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, explicabo officiis. Minima, nesciunt blanditiis ipsam architecto odit assumenda incidunt est pariatur. Perferendis optio esse, atque ipsum consequatur perspiciatis aliquam numquam!</p>
+    <script>
+       var nome = window.prompt('Qual seu nome?')/*Jogando os dados coleados para var nome*/
+
+         /*window.prompt('Qual seu nome?')
+           os dados vao  
+           a variavel nome recebe o resultado do prompt que vaiaaparecer na janela
+           uso sinal de + mais juntar uma coisa na outra
+           ou tambemconhecida como concatenaçao
+         */
+        window.alert('Bem vindo ao site ' + nome + '!')
+        var n1 = Number(window.prompt("Digie um numero"))
+        var n2 = Number(window.prompt("oDigite outro numero"))
+        //Number.parseInt Tranforma em numero 
+        //Number.parseFloat é para numero reais
+        //Podemos por so number se quiser
+        /*Para tranformar numero em string podemos usar .toString no final ou String()*/
+        /*Eleconcatena porque sao duas strings. quando so dois numeros ele soma*/
+        //No caso o comando window prompt retorna uma string
+        //${} 
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é ${s}`)
+    </script>
+</body>
+</html>

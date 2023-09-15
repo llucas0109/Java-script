@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+
+    <script>
+        var nome = window.prompt('Qual seu nome')
+        document.writeln(`<h1>seu nome tem ${nome.length} letras</h1>`)
+        document.writeln(`Seu nome emletras maiuculas e: ${nome.toUpperCase()}`)
+        document.write(`Seu nome em minusculas e: ${nome.toLowerCase()}`)
+        //Nao esqueca dos parentese depois do  toUpperCase()
+        /* 
+        Formatando numeros:
+     *  > var n1=1543.5
+        undefined
+        > n1
+        1543.5
+        > n1.toFixed(5)
+        '1543.50000'
+     *  > n1=n1.toFixed(6).replace('.', ',')
+        '1543,500000'
+        > n1
+        '1543,500000'
+        Nao esqueca de colocar os numeros n2 em pontos.   
+     *  > n2.toLocaleString('pt-BR', {style: 'currency'currency:'BRL'})
+        'R$ 1.500,60'
+        > n2.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+        '€ 1.500,60'
+>*/
+    </script>
+</body>
+</html>
