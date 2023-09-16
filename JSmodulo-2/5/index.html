@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros pasoso com DOM</title>
+    <style>
+        body{
+            background-color: rgb(23, 161, 161);
+            color: rgb(61, 60, 60);
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOW</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOW</strong> em java script</p>
+    <div>Click em mim</div>
+    <script>
+        /*DOW Seria o document Object Model*/
+        var meuh1 = window.document.getElementsByTagName('h1')[0]
+        var p1 =window.document.getElementsByTagName('p')[1]
+        window.document.write(p1.innerText + '-----o navegador e tipo:'+ p1.innerText + ': ')
+        p1.style.color = 'blue'
+        meuh1.style.backgroundColor='black'
+        window.document.write(p1.innerHTML)
+        /*innerText coloca o conteudo da tag na tela sem formatacao para ter a formatacao devemos po innerhtml inclusive suas tags filhas*/
+
+        /*Existem varios getElemet Tome cuidado por que quando Temos um 'getElemets'  No plural com s no final devemos usar o conchetes[] para selecionar, isso ocorre na ordem de cima para baixo sendo selecionado o primeiro como [0] o segundo como[1] e por ai vai */
+        /*
+        Temos o get elementes por:
+        por marca
+        por id
+        por nome
+        por classe
+        por seletor
+
+        Marca seria o get elementbytagname
+        */
+
+
+        /*o Dow Sao um conjunto de objetos que ficam dentro do seu navegador queda acesso aos componentes do seu site*/
+        /*O DOW So funciona quando roda javascript dentro do navegador*/
+        /*A raiz Do Dow no navegador e chamada de 'window' ou seja a janela do naveador e um objeto que se chama window*/
+        /*Dentro do dow temos o location,document e history*/
+        /*Location e aurl da pagina pagina anteriorese atual*/
+        /*Documente que e o documento atual*/
+        /*o history que registra de onde voce veio e pra onde voce vai*/
+        //Existe muitos outros objetos dentro do dow.
+        /*Dentro de document exite o html e dentro dohtml temos head e body Dentro do head temos aquela que ja sabemos o meta o tittle e dentro do body e conteudo de tags que temos */
+        /*Repare que temos um strong dentro de um p ou seja filho e faz parte da arvore.*/
+        //Esse e o conceitode a arvore !!!.
+        
+    </script>
+</body>
+</html>

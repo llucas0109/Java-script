@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area{
+            font: normal 1em arial;
+            background-color: green;
+            color: white;
+            height: 200px;
+            width: 200px;
+            line-height: 200px; /*Espaçamento entre linhas linha*/
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area"> <!--onclick determina a açao de clicar,  existem varios on de açoes e eventos, ao chamar ou seja ao clicar sera enviado para o javacript-->
+        Interaja
+    </div>
+    <!--Existem os eventos DOW que sao os eventos que ocorrem em um elemeto os mais comuns sao os de mouse click sainda do mouse entrada movimento e muito mais Procure por evente -->
+    <script>
+        var a = window.document.getElementById('area')
+        /*Primeiro localizamos e armazenamos a div na var a, depois de localizada aplicamos a ela addEventListener e Dentro das aspas colocamos o que ele esta ouvido Ex: 'click' e damos um nome para chamar a funçao que nos criamos, 'clicar'.*/
+        a.addEventListener('click',clicar)
+        a.addEventListener('mouseenter',enter)
+        a.addEventListener('mouseout',exit)
+        function enter(){
+            a.innerText='ENTROU!'
+            a.style.background='red'
+        }
+        function clicar(/*Algum parametro*/){
+            a.innerText='Clicou!'
+            }
+        function exit(){
+            a.innerText='Saiu!'
+            a.style.background='green'
+        }
+    </script>
+</body>
+</html>

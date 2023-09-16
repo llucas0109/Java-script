@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando de formar diferentes js</title>
+</head>
+<body>
+    <h1>Iniciando estudos com DOW</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOW</strong> em java script</p>
+    <div id="click">Click em mim</div>
+    <div id="click2">Alto e alem</div>
+    <script>
+        var gp1 = document.getElementsByName('nunca_usei_name')
+        var gp2 = document.getElementsByClassName('fortun')
+        var corpo = document.body
+        var divisao = document.getElementById('click')//Id
+        divisao.style.color = 'blue'//alterando a cor
+        corpo.style.background='lightblue'
+        //Podemos emitir o window e colocar somente document
+        //Podemos substituir textopor outro veja abaixo bellow.
+        divisao.innerText=('Mudei o texto usando innerText E =')
+        //Nao funciona com tags p
+        //outra maneira e usando queryselector que usa sintaxe do css para selecionar.
+        var divisao2 = document.querySelector('#click2')//Puxei click2 para divisao2
+        divisao2.style.background = ('gray') //aqui mudei a cor do divisao2 que altera a cor de click2. 
+        
+    </script>
+</body>
+</html>
