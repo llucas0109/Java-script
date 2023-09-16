@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="text" id="nacionalidade">
+    <input type="button" value="enviar" onclick="clicou()">
+    <div id="idiv">i</div>
+    <script>
+        function clicou(){
+            var nac=document.getElementById('nacionalidade')//So_nome
+            var vc=document.getElementById('idiv')//So_nome
+            var na2=nac.value /*Tive que criar uma outra variavel parar conseguir por no ${}. no if foi.*/
+            if (nac.value == 'Br') { //Tem que por Value por mais que seja texto entao fica nac.value.
+                vc.innerHTML= `Voce é brasileiro`
+            }else{
+                vc.innerHTML=`Voce é ${na2}, Seja bem vindo`
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutando</title>
+</head>
+<body>
+    <h1>Multa</h1>
+    <p style="display: inline;">Velocidade do caro: </p>
+    <input type="number" name="text" id="inumber">
+    <input type="button" value="Verificar" onclick="calcular()"> 
+    <!--Precisa ter abre e fecha parenteses no onclick-->
+    <div id="text1">aqui</div>  
+    <script>
+        function calcular(){
+            //Tem os alertas o caminho é window.alert() . 
+            var capvel = window.document.querySelector('input#inumber')
+            var capp = window.document.getElementById('text1') /*No getElementById È SOMENTE O NOME Do id!!*/
+            var vel = Number(capvel.value)
+            capp.innerHTML= `Sua velocidade é ${vel}` 
+            if(vel > 140){
+                capp.innerHTML += `<p><strong> MULTADO!</strong></p>` /*usamos o strong dentro de uma craze*/
+                /*Repare que para podermos usar p E strong Devemos usar innerHTML, E sempre usar uma só nao é possivel usar innerText e Depois querer por innerHTML para por um strong na mesma variavel!!!!!!!!!! */
+                /*Concatenamos dois textos. graças ao uso de +=*/
+            }
+        }
+    </script>
+</body>
+</html>
