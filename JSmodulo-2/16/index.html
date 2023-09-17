@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Titulo</h1>
+    </header>
+    <section>
+        Testando
+        <div>
+            <p>Ano de nascimento: 
+                <input type="number" name="txtando" id="txtando" min="0">
+            </p>
+            <p> Sexo: 
+                <!--Os radio precisa ter os mesos name para marcar e desmarcar-->
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem"> 
+                <label for="fem">feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Enviar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            Preencha seus dados acima
+        </div>
+    </section>
+    <footer>
+        <p>&copy;LUCAS  </p>
+    </footer>
+    <script src="script.js"></script><!--Java sript em arquivo separado-->
+</body>
+</html>

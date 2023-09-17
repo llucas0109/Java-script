@@ -1,0 +1,36 @@
+body{
+background-color: rgb(82, 82, 218);
+font: normal 1em arial;
+}
+header{
+color: white;
+text-align: center;
+}
+section{
+background-color: white;
+width: 500px;
+border-radius: 10px;
+margin: auto;
+padding: 15px;
+box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.452);
+}
+footer{
+    color: white;
+    text-align: center;
+}
+div{
+    text-align: center;
+}
+div#img{
+background-color: lightslategray;
+background-image: url('../pexels-mark-1080953.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+border-radius: 50%;
+margin: auto;
+width: 200px;
+height: 200px;
+margin-top: 10px;
+}
+/*Nao tem alinhamento Vertical de objetos pq nao precisa voce pode usar o margin top ou bottom se tiver coteudoem cima ou na section emfim...*/
