@@ -11,4 +11,5 @@ console.log((`Executado ${c}`))
 c++
 }while(c<=6) /*No do whilw o while nao fecha um bloco{}.*/
 
-//Condiçoes:'<>= == === !='    Logicos: '&& ||'
+//Condiçoes Sao Os if else
+//Repeticoes sao os laços while do while e for

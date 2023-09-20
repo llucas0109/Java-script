@@ -1,0 +1,32 @@
+body{
+background-color: rgb(82, 82, 218);
+font: normal 1em arial;
+}
+header{
+color: white;
+text-align: center;
+}
+section{
+background-color: white;
+width: 500px;
+border-radius: 10px;
+margin: auto;
+padding: 15px;
+box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.452);
+}
+div > select#ilista1{
+    position: relative;
+}
+div > select#ilista2{
+    display: inline;
+    position: absolute;
+    top: 30px;
+}
+select{
+    width: 200px;
+    height: 230px;
+}
+footer{
+    color: white;
+    text-align: center;
+}
