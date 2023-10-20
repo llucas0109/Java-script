@@ -1,4 +1,5 @@
 //*Nao use var use let ou const
+//Um arquivo index.js é um 'modulo'
 if(true){
   //O let so Estara disponivel dentro das chaves, ja o var estara disponivel dentro como fora ou eja poderiamos chamar de qualquer lugar.
   var exposta = 'exposta'; //var por fora e dentro
@@ -41,6 +42,7 @@ console.log(pessoa.carros.camaro.cor)
 console.log(pessoa.carros.skyline.multas)
 console.log(pessoa.andar(150))                                    */
 /*-4--------------------------------------------------------------
+//Numa Const O valor inteiro nao poder ser alterado mas se for parcial de um array ou acessando um objeto ai pode sim 
 const obj = {a:1,b:2};
  obj.c = 3; //Adicionamos um parametro 'c' e com o valor de 3 a obj
  console.log(obj);
